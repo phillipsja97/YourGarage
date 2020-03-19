@@ -6,7 +6,10 @@ namespace YourGarage
 {
     class Watercraft : VehicleBase
     {
-        public override void Refuel()
+        public string Make { get; set; }
+        public int NumberOfEngines { get; set; }
+        public bool fishingBoat { get; set; }
+        public override void Refuel(string watercraft)
         {
             Console.WriteLine(" Watercraft Refuel");
         }

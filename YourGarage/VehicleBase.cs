@@ -10,7 +10,7 @@ namespace YourGarage
         public virtual string vehicleColor { get; set; }
         public virtual int passengerCount { get; set; }
 
-        public abstract void Refuel();
+        public abstract void Refuel(string car);
 
     }
 }

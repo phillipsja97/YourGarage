@@ -6,9 +6,18 @@ namespace YourGarage
 {
     class Aircraft : VehicleBase
     {
-        public override void Refuel()
+        public string Make { get; set; }
+        public bool Private { get; set; }
+        public bool rotaryEngine { get; set; }
+
+        public void Fly()
         {
-            Console.WriteLine($"Aircraft Refueling");
+            Console.WriteLine($"The aircraft is flying!");
+        }
+
+        public override void Refuel(string car)
+        {
+            Console.WriteLine($"The {car} is refueling.");
         }
     }
 }
